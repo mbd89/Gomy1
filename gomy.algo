@@ -7,13 +7,15 @@ j:INTEGER;
 sentence:string;
 BEGIN 
 tab:{"a","e","i","o","u"};
-sentence:"Hello How are you doing";
 i:=0;
 wordCount:=0;
 vowelCount:=0;
 FOR i FROM 0 TO SENTENCE.length DO 
-IF SENTENCE[i] = " "
+IF SENTENCE[i] = " " {
 wordCount:=wordCount+1;
+}
+wordCount:=wordCount+1;
+
 
 END_IF 
 END_FOR 
@@ -24,7 +26,7 @@ IF SENTENCE[i] = tab[j]
 vowelCount:=vowelCount+1;
 IF vowelCount > 5
 vowelCount = 5;
-print vowelCount;
+
 END_IF 
 END_FOR
 
